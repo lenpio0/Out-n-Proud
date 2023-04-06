@@ -1884,6 +1884,14 @@ video {
   font-family: Arvo, serif;
 }
 
+.font-raleway {
+  font-family: Raleway, sans-serif;
+}
+
+.font-varela {
+  font-family: Varela Round;
+}
+
 .font-bold {
   font-weight: 700;
 }
