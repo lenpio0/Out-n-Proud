@@ -14,7 +14,9 @@ module.exports = {
         'black': '#FCFFFD',
       },
       fontFamily: {
-
+        'arvo': ['Arvo', 'serif'],
+        'raleway': ['Raleway', 'sans-serif'],
+        'varela': 'Varela Round',
       },
     },
   },
