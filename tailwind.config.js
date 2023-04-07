@@ -2,17 +2,17 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    colors: {
-      'blue': '#244CEC',
-      'pink': '#F41159',
-      'red': '#F81310',
-      'orange': '#FB7306',
-      'yellow': '#F7C809',
-      'green': '#077931',
-      'black': '#343030',
-      'white': '#FCFFFD',
-    },
     extend: {
+      colors: {
+        'blue': '#244CEC',
+        'pink': '#F41159',
+        'red': '#F81310',
+        'orange': '#FB7306',
+        'yellow': '#F7C809',
+        'green': '#077931',
+        'white': '#FCFFFD',
+        'black': '#343030',
+      },
       fontFamily: {
         'arvo': ['Arvo', 'serif'],
         'raleway': ['Raleway', 'sans-serif'],
