@@ -657,6 +657,14 @@ video {
   clear: none;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
+.-mt-24 {
+  margin-top: -6rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -764,8 +772,16 @@ video {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-full {
   width: 100%;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-shrink {
@@ -1610,6 +1626,11 @@ video {
   border-top-right-radius: 0.25rem;
 }
 
+.rounded-t-3xl {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
 .rounded-bl {
   border-bottom-left-radius: 0.25rem;
 }
@@ -1709,13 +1730,14 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-red {
+.bg-black {
   --tw-bg-opacity: 1;
-  background-color: rgb(248 19 16 / var(--tw-bg-opacity));
+  background-color: rgb(52 48 48 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/Assets\/images\/Landscape_of_an_Amsterdam_street\.png\'\)\] {
-  background-image: url('../Assets/images/Landscape_of_an_Amsterdam_street.png');
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 255 253 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -1736,10 +1758,6 @@ video {
 .box-decoration-clone {
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
-}
-
-.bg-cover {
-  background-size: cover;
 }
 
 .bg-fixed {
@@ -1832,14 +1850,8 @@ video {
      object-fit: scale-down;
 }
 
-.px-40 {
-  padding-left: 10rem;
-  padding-right: 10rem;
-}
-
-.px-60 {
-  padding-left: 15rem;
-  padding-right: 15rem;
+.p-0 {
+  padding: 0px;
 }
 
 .px-80 {
@@ -1847,14 +1859,9 @@ video {
   padding-right: 20rem;
 }
 
-.px-56 {
-  padding-left: 14rem;
-  padding-right: 14rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .text-left {
@@ -1913,12 +1920,17 @@ video {
   vertical-align: super;
 }
 
-.font-arvo {
-  font-family: Arvo, serif;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
