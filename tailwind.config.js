@@ -19,6 +19,10 @@ module.exports = {
         'varela': 'Varela Round',
       },
     },
+    backgroundImage: {
+      'separator-top': 'linear-gradient(to bottom right, #FCFFFD 50%, #0000 50%)',
+      'separator-bot': 'linear-gradient(to bottom right, #0000 50%, #FCFFFD 50%)',
+    }
   },
   plugins: [],
 }
