@@ -1888,11 +1888,6 @@ video {
      object-position: left top;
 }
 
-.object-left {
-  -o-object-position: left;
-     object-position: left;
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -1966,8 +1961,12 @@ video {
   font-family: Raleway, sans-serif;
 }
 
-.font-springwoman {
-  font-family: Spring Woman, sans-serif;
+.font-yellowtail {
+  font-family: Yellowtail, handwriting;
+}
+
+.font-allura {
+  font-family: Allura, handwriting;
 }
 
 .text-2xl {
@@ -1977,11 +1976,6 @@ video {
 
 .text-8xl {
   font-size: 6rem;
-  line-height: 1;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
   line-height: 1;
 }
 
@@ -2467,22 +2461,26 @@ video {
     background-color: rgb(252 255 253 / var(--tw-bg-opacity));
   }
 
-  .sm\:py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+  .sm\:bg-indigo-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(79 70 229 / var(--tw-bg-opacity));
   }
 
-  .sm\:font-tanya {
-    font-family: Tanya_Hati;
+  .sm\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(52 48 48 / var(--tw-bg-opacity));
   }
 
-  .sm\:font-springwoman {
-    font-family: Spring Woman, sans-serif;
+  .sm\:font-allura {
+    font-family: Allura, handwriting;
   }
 
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .sm\:font-handwriting {
+    font-family: Birthstone, handwriting;
+  }
+
+  .sm\:font-varela {
+    font-family: Varela Round;
   }
 
   .sm\:text-7xl {
@@ -2490,19 +2488,19 @@ video {
     line-height: 1;
   }
 
-  .sm\:text-blue {
-    --tw-text-opacity: 1;
-    color: rgb(36 76 236 / var(--tw-text-opacity));
-  }
-
-  .sm\:text-black {
-    --tw-text-opacity: 1;
-    color: rgb(252 255 253 / var(--tw-text-opacity));
+  .sm\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .sm\:text-white {
     --tw-text-opacity: 1;
     color: rgb(52 48 48 / var(--tw-text-opacity));
+  }
+
+  .sm\:text-black {
+    --tw-text-opacity: 1;
+    color: rgb(252 255 253 / var(--tw-text-opacity));
   }
 
   .sm\:underline {

@@ -17,9 +17,9 @@ module.exports = {
         'arvo': ['Arvo', 'serif'],
         'raleway': ['Raleway', 'sans-serif'],
         'varela': ['Varela Round'],
-        'tanya' :['Tanya_Hati'],
-        'madi' : ['Ms Madi', 'cursive'],
-        'springwoman': ['Spring Woman', 'sans-serif'],
+        'handwriting': ['Birthstone', 'handwriting'],
+        'allura': ['Allura', 'handwriting' ],
+        'yellowtail' : ['Yellowtail', 'handwriting']
       },
     },
   },
