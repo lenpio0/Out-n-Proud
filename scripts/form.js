@@ -1,8 +1,14 @@
 let form = document.querySelector('#contact-form');
-    
+let stat = document.querySelector("#contact-status");
+
+function showMsg() {
+  stat.classList.remove('hidden');
+  stat.classList.replace('opacity-0', 'opacity-100');
+  setTimeout(() => {stat.classList.replace('opacity-100', 'opacity-0')}, 5000);
+  setTimeout(() => {stat.classList.add('hidden')}, 6000);
+}
 async function handleSubmit(event) {
   event.preventDefault();
-  let status = document.querySelector("#contact-status");
   let data = new FormData(event.target);
   fetch(event.target.action, {
     method: form.method,
@@ -12,19 +18,23 @@ async function handleSubmit(event) {
     }
   }).then(response => {
     if (response.ok) {
-      status.innerHTML = "Demande envoyée !";
+      stat.innerHTML = "Demande envoyée !";
+      showMsg();
       form.reset()
     } else {
       response.json().then(data => {
         if (Object.hasOwn(data, 'errors')) {
-          status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          stat.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+          showMsg();
         } else {
-          status.innerHTML = "Oups ! Il y a eu un problème dans l'envoi du formulaire"
+          stat.innerHTML = "Erreur...";
+          showMsg();
         }
       })
     }
   }).catch(error => {
-    status.innerHTML = "Oups ! Il y a eu un problème dans l'envoi du formulaire"
+    stat.innerHTML = "Erreur...";
+    showMsg();
   });
 }
 form.addEventListener("submit", handleSubmit)

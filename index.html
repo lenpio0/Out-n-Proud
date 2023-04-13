@@ -40,7 +40,7 @@
             <h1  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-8xl text-white font-arvo">OUT AND <span id="test-typing"></span> </h1>
         </div>
         <div id="section-container" class="bg-black px-4 
-        2xl:px-60 xl:px-40 lg:px-20 md:px-10 ">
+        2xl:px-60 xl:px-40 lg:px-20 md:px-10 relative">
             <nav class=" bg-white font-varela text-2xl font-semibold relative -mt-16 py-4 rounded-t-3xl
             lg:" data-aos="fade-up">
                 <ul class="flex justify-around w-full">
@@ -84,14 +84,15 @@
 
             </section>
             <div class="bg-white separator-bot-2 h-36 w-full"></div>
-            <div class="bg-white separator-top-2 h-36 w-full"></div>
-            <section class="bg-orange relative w-full h-screen" id="contact">
+            <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                <div class="bg-white separator-top-2 h-36 w-full" ></div>
+                <section class="bg-white relative z-10 w-full rounded-b-3xl" id="contact">
 
-            </section>
-        
+                </section>
+            </div>
         </div>
-        <footer class="">
-            <div class="flex h-auto w-full overflow-hidden justify-center bg-cover ">
+        <footer class="-mt-20 relative">
+            <div class="flex h-auto w-full overflow-hidden justify-center bg-cover bg-black">
                 <img src="Assets/Idée-parallaxe/city-cut-in-10/image1x1.jpg" alt="" data-aos="fade-down" data-aos-duration="700" data-aos-delay="100">
                 <img src="Assets/Idée-parallaxe/city-cut-in-10/image2x1.jpg" alt=""data-aos="fade-up" data-aos-duration="700"data-aos-delay="200">
                 <img src="Assets/Idée-parallaxe/city-cut-in-10/image3x1.jpg" alt=""data-aos="fade-down" data-aos-duration="700"data-aos-delay="300">
