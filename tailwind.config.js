@@ -16,7 +16,9 @@ module.exports = {
       fontFamily: {
         'arvo': ['Arvo', 'serif'],
         'raleway': ['Raleway', 'sans-serif'],
-        'varela': 'Varela Round',
+        'varela': ['Varela Round'],
+        'tanya' :['Tanya_Hati'],
+        'madi' :'Ms Madi', cursive;
       },
     },
   },
