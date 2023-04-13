@@ -18,7 +18,8 @@ module.exports = {
         'raleway': ['Raleway', 'sans-serif'],
         'varela': ['Varela Round'],
         'tanya' :['Tanya_Hati'],
-        'madi' :'Ms Madi', cursive;
+        'madi' : ['Ms Madi', 'cursive'],
+        'springwoman': ['Spring Woman', 'sans-serif'],
       },
     },
   },
