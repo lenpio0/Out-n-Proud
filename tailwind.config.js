@@ -16,7 +16,10 @@ module.exports = {
       fontFamily: {
         'arvo': ['Arvo', 'serif'],
         'raleway': ['Raleway', 'sans-serif'],
-        'varela': 'Varela Round',
+        'varela': ['Varela Round'],
+        'handwriting': ['Birthstone', 'handwriting'],
+        'allura': ['Allura', 'handwriting' ],
+        'yellowtail' : ['Yellowtail', 'handwriting']
       },
     },
   },
