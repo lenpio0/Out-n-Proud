@@ -10,8 +10,8 @@ module.exports = {
         'orange': '#FB7306',
         'yellow': '#F7C809',
         'green': '#077931',
-        'white': '#FCFFFD',
         'black': '#343030',
+        'white': '#FCFFFD',
         'blue-contact': '#4fc7c5',
       },
       fontFamily: {

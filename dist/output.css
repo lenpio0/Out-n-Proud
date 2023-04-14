@@ -1773,6 +1773,10 @@ video {
   border-radius: 1.5rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1957,6 +1961,11 @@ video {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
+.bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
 .bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
@@ -1979,6 +1988,33 @@ video {
 
 .bg-smoke {
   background-image: url(../images/rainbowSmoke2.png);
+}
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.from-\[\#ff8a05\] {
+  --tw-gradient-from: #ff8a05 var(--tw-gradient-from-position);
+  --tw-gradient-from-position:  ;
+  --tw-gradient-to: rgb(255 138 5 / 0)  var(--tw-gradient-from-position);
+  --tw-gradient-to-position:  ;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-\[\#ff5478\] {
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to: rgb(255 84 120 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
+  --tw-gradient-stops: var(--tw-gradient-from), #ff5478 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.to-\[\#ff00c6\] {
+  --tw-gradient-to: #ff00c6 var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
 }
 
 .decoration-slice {
@@ -2161,6 +2197,44 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.p-0\.5 {
+  padding: 0.125rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-80 {
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-left {
@@ -2699,6 +2773,10 @@ video {
 
 .transition-opacity {
   transition-property: opacity;
+}
+
+.transition-all {
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -2882,7 +2960,46 @@ video {
   text-align: center;
 }
 
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.group:hover .group-hover\:animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.group:hover .group-hover\:bg-opacity-0 {
+  --tw-bg-opacity: 0;
+}
+
+.group:hover .group-hover\:from-\[\#ff00c6\] {
+  --tw-gradient-from: #ff00c6 var(--tw-gradient-from-position);
+  --tw-gradient-from-position:  ;
+  --tw-gradient-to: rgb(255 0 198 / 0)  var(--tw-gradient-from-position);
+  --tw-gradient-to-position:  ;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.group:hover .group-hover\:via-\[\#ff5478\] {
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to: rgb(255 84 120 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
+  --tw-gradient-stops: var(--tw-gradient-from), #ff5478 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.group:hover .group-hover\:to-\[\#ff8a05\] {
+  --tw-gradient-to: #ff8a05 var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
+}
+
 @media (min-width: 640px) {
+  .sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -2959,11 +3076,32 @@ video {
 
   .lg\:items-center {
     align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:w-\[450px\] {
+    width: 450px;
+  }
+
+  .lg\:w-\[500px\] {
+    width: 500px;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
   .lg\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .lg\:pb-10 {
+    padding-bottom: 2.5rem;
   }
 
   .lg\:pt-14 {
@@ -3003,6 +3141,14 @@ video {
   .xl\:justify-around {
     justify-content: space-around;
   }
+  
+  .xl\:w-\[600px\] {
+    width: 600px;
+  }
+
+  .xl\:justify-evenly {
+    justify-content: space-evenly;
+  }
 
   .xl\:px-40 {
     padding-left: 10rem;
@@ -3015,6 +3161,10 @@ video {
 
   .xl\:pt-6 {
     padding-top: 1.5rem;
+  }
+  
+  .xl\:pb-10 {
+    padding-bottom: 2.5rem;
   }
 }
 
