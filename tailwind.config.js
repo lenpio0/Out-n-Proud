@@ -17,7 +17,10 @@ module.exports = {
       fontFamily: {
         'arvo': ['Arvo', 'serif'],
         'raleway': ['Raleway', 'sans-serif'],
-        'varela': 'Varela Round',
+        'varela': ['Varela Round'],
+        'handwriting': ['Birthstone', 'handwriting'],
+        'allura': ['Allura', 'handwriting' ],
+        'yellowtail' : ['Yellowtail', 'handwriting']
       },
       backgroundImage: {
         'separator-top': 'linear-gradient(to bottom right, #FCFFFD 50%, #0000 50%)',
