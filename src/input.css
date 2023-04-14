@@ -15,4 +15,16 @@
     .separator-bot-2 {
         clip-path: polygon(100% 100%, 100% 0, 0 0);
     }
+    .card-active {
+        width: 20rem;
+        border-radius: 1.5rem;
+    }
+    .textbox-active {
+        width: 18rem;
+        height: 18rem;
+        border-radius: 1.5rem;
+    }
+    .overflow-wrap-anywhere {
+        overflow-wrap: break-word;
+    }
   }
