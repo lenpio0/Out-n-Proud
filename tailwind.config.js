@@ -10,8 +10,8 @@ module.exports = {
         'orange': '#FB7306',
         'yellow': '#F7C809',
         'green': '#077931',
-        'white': '#343030',
-        'black': '#FCFFFD',
+        'white': '#FCFFFD',
+        'black': '#343030',
       },
       fontFamily: {
         'arvo': ['Arvo', 'serif'],
