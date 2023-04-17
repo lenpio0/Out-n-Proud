@@ -782,10 +782,6 @@ video {
   margin-left: 5rem;
 }
 
-.ml-4 {
-  margin-left: 1rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -3153,6 +3149,10 @@ video {
     margin-top: 0px;
   }
 
+  .sm\:h-auto {
+    height: auto;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -3365,11 +3365,6 @@ video {
 
   .xl\:justify-evenly {
     justify-content: space-evenly;
-  }
-
-  .xl\:object-contain {
-    -o-object-fit: contain;
-       object-fit: contain;
   }
 
   .xl\:px-40 {
