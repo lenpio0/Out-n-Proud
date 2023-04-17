@@ -782,10 +782,6 @@ video {
   margin-left: 5rem;
 }
 
-.ml-4 {
-  margin-left: 1rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -2548,6 +2544,22 @@ video {
   text-decoration-style: wavy;
 }
 
+.underline-offset-1 {
+  text-underline-offset: 1px;
+}
+
+.underline-offset-2 {
+  text-underline-offset: 2px;
+}
+
+.underline-offset-4 {
+  text-underline-offset: 4px;
+}
+
+.underline-offset-8 {
+  text-underline-offset: 8px;
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3365,11 +3377,6 @@ video {
 
   .xl\:justify-evenly {
     justify-content: space-evenly;
-  }
-
-  .xl\:object-contain {
-    -o-object-fit: contain;
-       object-fit: contain;
   }
 
   .xl\:px-40 {
