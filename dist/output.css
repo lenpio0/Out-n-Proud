@@ -2083,6 +2083,10 @@ video {
   background-image: url(../images/rainbowSmoke2.png);
 }
 
+.bg-smoker {
+  background-image: url(/Assets/images/smokeRight.png);
+}
+
 .from-\[\#ff8a05\] {
   --tw-gradient-from: #ff8a05 var(--tw-gradient-from-position);
   --tw-gradient-from-position:  ;
@@ -2158,6 +2162,10 @@ video {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-right {
+  background-position: right;
 }
 
 .bg-repeat {
@@ -2312,14 +2320,6 @@ video {
   padding-top: 2rem;
 }
 
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -2391,11 +2391,6 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-5xl {
@@ -3351,14 +3346,6 @@ video {
     height: 350px;
   }
 
-  .xl\:h-\[450px\] {
-    height: 450px;
-  }
-
-  .xl\:h-\[50px\] {
-    height: 50px;
-  }
-
   .xl\:w-\[325px\] {
     width: 325px;
   }
@@ -3367,13 +3354,6 @@ video {
     width: 350px;
   }
 
-  .xl\:w-\[330px\] {
-    width: 330px;
-  }
-
-  .xl\:w-\[3px\] {
-    width: 3px;
-  }
   .xl\:w-\[600px\] {
     width: 600px;
   }
@@ -3398,10 +3378,6 @@ video {
 
   .xl\:pb-10 {
     padding-bottom: 2.5rem;
-  }
-
-  .xl\:pt-28 {
-    padding-top: 7rem;
   }
 
   .xl\:pt-6 {
