@@ -8,10 +8,10 @@
         <link href="/dist/output.css" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
         <link rel="preconnect" href="https://fonts.bunny.net">
-        <link
-            href="https://fonts.bunny.net/css?family=arvo:400,400i,700,700i|raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|varela-round:400"
-            rel="stylesheet">
+        <link href="https://fonts.bunny.net/css?family=arvo:400,400i,700,700i|raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|varela-round:400" rel="stylesheet">
         <script src="scripts/main.js" defer></script>
+        <script src="scripts/form.js" defer></script>
+        <script src="scripts/lgbtq+.js" defer></script>
     </head>
 <body class="max-w-full m-0 p-0 selection:bg-fuchsia-300 selection:text-fuchsia-800"></body>
         <div class="relative" id="home"  >
@@ -41,7 +41,7 @@
             <h1  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-8xl text-white font-arvo">OUT AND <span id="test-typing"></span> </h1>
         </div>
         <div id="section-container" class="bg-black px-4 
-        2xl:px-60 xl:px-40 lg:px-20 md:px-10 ">
+        2xl:px-60 xl:px-40 lg:px-20 md:px-10 relative">
             <nav class=" bg-white font-varela text-2xl font-semibold relative -mt-16 py-4 rounded-t-3xl
             lg:" data-aos="fade-up">
                 <ul class="flex justify-around w-full">
@@ -56,8 +56,70 @@
 
             </nav>
             
-            <section class="bg-red relative w-full h-screen" id="landing">
-
+            <section class="bg-white relative w-full" id="landingg">
+                <div class="flex justify-center " id="rainbow-cards">
+                    <div class="bg-blue rounded-full h-80 w-16 p-4 mx-1 group transition-[height] transition-[width] duration-700 overflow-hidden shrink-0">
+                        <div class="bg-white rounded-full text-center p-1 h-10 group-hover:h-72 transition-all overflow-hidden">
+                            <span class="font-arvo font-semibold text-xl">L</span>
+                            <span class="hidden font-arvo font-semibold text-xl overflow-wrap-anywhere w-4 mx-auto">ESBIENNE</span>
+                            <div class="hidden">
+                                <p class="font-arvo font-semibold m-4">LESBIENNE</p>
+                                <p class="font-arvo m-4">Une femme lesbienne va être attirée par les autres femmes. Synonyme à l’homosexualité, mais particulier aux femmes, le lesbianisme est aussi appelé le saphisme ou homosexualité féminine.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-pink rounded-full h-80 w-16 p-4 mx-1 group transition-[height] transition-[width] duration-700 overflow-hidden shrink-0">
+                        <div class="bg-white rounded-full text-center p-1 h-10 group-hover:h-72 transition-all overflow-hidden">
+                            <span class="font-arvo font-semibold text-xl">G</span>
+                            <span class="hidden font-arvo font-semibold text-xl overflow-wrap-anywhere w-4 mx-auto">AY</span>
+                            <div class="hidden">
+                                <p class="font-arvo font-semibold m-4">GAY</p>
+                                <p class="font-arvo m-4">Un gay est un homme qui va éprouver une attirance sexuelle pour d’autres hommes. Terme plus ou moins synonyme à homosexuel.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-red rounded-full h-80 w-16 p-4 mx-1 group transition-[height] transition-[width] duration-700 overflow-hidden shrink-0">
+                        <div class="bg-white rounded-full text-center p-1 h-10 group-hover:h-72 transition-all overflow-hidden">
+                            <span class="font-arvo font-semibold text-xl">B</span>
+                            <span class="hidden font-arvo font-semibold text-xl overflow-wrap-anywhere w-4 mx-auto">ISEXUEL</span>
+                            <div class="hidden">
+                                <p class="font-arvo font-semibold m-4">BISEXUEL·LE</p>
+                                <p class="font-arvo m-4">Une personne bisexuelle est une personne qui va éprouver une attirance pour les genres binaires mis en valeur dans notre société : les hommes et les femmes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-orange rounded-full h-80 w-16 p-4 mx-1 group transition-[height] transition-[width] duration-700 overflow-hidden shrink-0">
+                        <div class="bg-white rounded-full text-center p-1 h-10 group-hover:h-72 transition-all overflow-hidden">
+                            <span class="font-arvo font-semibold text-xl">T</span>
+                            <span class="hidden font-arvo font-semibold text-xl overflow-wrap-anywhere w-4 mx-auto">RANS</span>
+                            <div class="hidden">
+                                <p class="font-arvo font-semibold m-4">TRANSGENRE</p>
+                                <p class="font-arvo m-4">Un individu transgenre ne s’identifie pas au genre qui lui a été assigné à la naissance. C’est également le terme utilisé pour désigner une personne dont le sexe biologique est exclu du spectre binaire homme/femme.</p>
+                            </div>
+                        </div>
+                    </div>        
+                    <div class="bg-yellow rounded-full h-80 w-16 p-4 mx-1 group transition-[height] transition-[width] duration-700 overflow-hidden shrink-0">
+                        <div class="bg-white rounded-full text-center p-1 h-10 group-hover:h-72 transition-all overflow-hidden">
+                            <span class="font-arvo font-semibold text-xl">Q</span>
+                            <span class="hidden font-arvo font-semibold text-xl overflow-wrap-anywhere w-4 mx-auto">UEER</span>
+                            <div class="hidden">
+                                <p class="font-arvo font-semibold m-4">QUEER</p>
+                                <p class="font-arvo m-4">Queer est le terme utilisé pour qualifier toutes les personnes qui sont exclues de la vision binaire homme/femme et de l’hétérosexualité, ainsi que celles ne souhaitant mettre de labels sur leur orientation sexuelle ou identité de genre.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-green rounded-full h-80 w-16 p-4 mx-1 group transition-[height] transition-[width] duration-700 overflow-hidden shrink-0 ml-4">
+                        <div class="bg-white rounded-full text-center p-1 h-10 group-hover:h-72 transition-[height] overflow-hidden">
+                            <span class="font-arvo font-semibold text-xl">+</span>
+                            <span class="hidden font-arvo font-semibold text-xl overflow-wrap-anywhere w-4 mx-auto">AUTRES</span>
+                            <div class="hidden">
+                                <p class="font-arvo font-semibold m-4">AUTRES</p>
+                                <p class="font-arvo m-4">Intersexe, pansexuel, aromantique, aucun sigle ne pourra englober l'intégralité des spectres d'identité de genre et de sexe. C'est pourquoi tout ce qui n'est pas représenté directement dans ce sigle se voit tout de même reconnu grâce à un +.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </section>
             <div class="bg-white separator-bot h-36 w-full"></div>
             <div class="bg-white separator-top h-36 w-full"></div>
@@ -71,7 +133,7 @@
             </section>
             <div class="bg-white separator-bot h-36 w-full"></div>
             <div class="bg-white separator-top h-36 w-full"></div>
-            <section class="bg-yellow relative w-full h-screen" id="help-us">
+            <section class="bg-white relative w-full h-screen" id="help-us">
 
             </section>
             <div class="bg-white separator-bot-2 h-36 w-full"></div>
@@ -85,14 +147,15 @@
 
             </section>
             <div class="bg-white separator-bot-2 h-36 w-full"></div>
-            <div class="bg-white separator-top-2 h-36 w-full"></div>
-            <section class="bg-orange relative w-full h-screen" id="contact">
+            <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                <div class="bg-white separator-top-2 h-36 w-full" ></div>
+                <section class="bg-white relative z-10 w-full rounded-b-3xl" id="contact">
 
-            </section>
-        
+                </section>
+            </div>
         </div>
-        <footer class="">
-            <div class="flex h-auto w-full overflow-hidden justify-center bg-cover ">
+        <footer class="-mt-20 relative">
+            <div class="flex h-auto w-full overflow-hidden justify-center bg-cover bg-black">
                 <img src="Assets/Idée-parallaxe/city-cut-in-10/image1x1.jpg" alt="" data-aos="fade-down" data-aos-duration="700" data-aos-delay="100">
                 <img src="Assets/Idée-parallaxe/city-cut-in-10/image2x1.jpg" alt=""data-aos="fade-up" data-aos-duration="700"data-aos-delay="200">
                 <img src="Assets/Idée-parallaxe/city-cut-in-10/image3x1.jpg" alt=""data-aos="fade-down" data-aos-duration="700"data-aos-delay="300">
