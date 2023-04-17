@@ -782,10 +782,6 @@ video {
   margin-left: 5rem;
 }
 
-.ml-4 {
-  margin-left: 1rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -925,6 +921,10 @@ video {
   height: 12rem;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
 .h-80 {
   height: 20rem;
 }
@@ -939,6 +939,14 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[800px\] {
+  height: 800px;
+}
+
+.h-\[500px\] {
+  height: 500px;
 }
 
 .w-1\/2 {
@@ -3365,11 +3373,6 @@ video {
 
   .xl\:justify-evenly {
     justify-content: space-evenly;
-  }
-
-  .xl\:object-contain {
-    -o-object-fit: contain;
-       object-fit: contain;
   }
 
   .xl\:px-40 {
