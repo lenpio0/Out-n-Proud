@@ -1887,6 +1887,10 @@ video {
   background-color: rgb(247 200 9 / var(--tw-bg-opacity));
 }
 
+.bg-smoke {
+  background-image: url(../images/rainbowSmoke2.png);
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2040,8 +2044,16 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .pt-6 {
@@ -2121,9 +2133,9 @@ video {
   line-height: 2rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-7xl {
@@ -2138,6 +2150,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .font-semibold {
@@ -2214,6 +2230,11 @@ video {
 
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(52 48 48 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2800,8 +2821,24 @@ video {
     height: 450px;
   }
 
+  .xl\:h-\[50px\] {
+    height: 50px;
+  }
+
+  .xl\:w-\[325px\] {
+    width: 325px;
+  }
+
   .xl\:w-\[350px\] {
     width: 350px;
+  }
+
+  .xl\:w-\[330px\] {
+    width: 330px;
+  }
+
+  .xl\:w-\[3px\] {
+    width: 3px;
   }
 
   .xl\:justify-around {
