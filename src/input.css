@@ -28,3 +28,15 @@
         overflow-wrap: break-word;
     }
   }
+
+  ::-webkit-scrollbar{width: 5px;}
+  ::-webkit-scrollbar-track {
+    background-color: rgb(53, 50, 50);
+    border-radius: 25px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: blueviolet;
+    border-radius: 25px;
+  }
+  
+  

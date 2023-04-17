@@ -782,10 +782,6 @@ video {
   margin-left: 5rem;
 }
 
-.ml-4 {
-  margin-left: 1rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -2947,6 +2943,20 @@ video {
   overflow-wrap: break-word;
 }
 
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(53, 50, 50);
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: blueviolet;
+  border-radius: 25px;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -3396,3 +3406,5 @@ video {
     padding-right: 15rem;
   }
 }
+  
+  
