@@ -58,9 +58,11 @@
     transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
 }
 
-.slider span:hover img{
+.slider span:hover img {
     transform: translateY(-50%) scale(1.2);
 }
+
+
 
 .zeubi-la-mouche {
     visibility: hidden;
