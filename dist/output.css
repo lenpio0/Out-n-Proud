@@ -739,6 +739,11 @@ video {
   margin-right: 0.25rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -2288,10 +2293,6 @@ video {
   padding-bottom: 1rem;
 }
 
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -3324,6 +3325,10 @@ video {
   .lg\:pt-14 {
     padding-top: 3.5rem;
   }
+
+  .lg\:pt-24 {
+    padding-top: 6rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -3376,6 +3381,10 @@ video {
     padding-bottom: 2.5rem;
   }
 
+  .xl\:pb-6 {
+    padding-bottom: 1.5rem;
+  }
+
   .xl\:pt-28 {
     padding-top: 7rem;
   }
@@ -3386,6 +3395,10 @@ video {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:-mt-6 {
+    margin-top: -1.5rem;
+  }
+
   .\32xl\:px-60 {
     padding-left: 15rem;
     padding-right: 15rem;
