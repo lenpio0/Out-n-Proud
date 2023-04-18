@@ -3177,6 +3177,10 @@ video {
     margin-top: 0px;
   }
 
+  .sm\:h-auto {
+    height: auto;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
