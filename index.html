@@ -12,10 +12,12 @@
         <script src="scripts/main.js" defer></script>
         <script src="scripts/form.js" defer></script>
         <script src="scripts/lgbtq+.js" defer></script>
+        <script src="scripts/hide.js" defer></script>
     </head>
-<body class="max-w-full m-0 p-0 selection:bg-fuchsia-300 selection:text-fuchsia-800"></body>
+<body class="max-w-full m-0 pt-[700px] selection:bg-fuchsia-300 selection:text-fuchsia-800">
+    <div class="fixed top-0 -z-20">
         <div class="relative" id="home">
-            <div class="flex h-screen w-full overflow-hidden justify-center ">
+            <div class="flex h-screen w-full overflow-hidden justify-center">
                 <img class="h-full w-full" 
                 data-aos="fade-up" data-aos-duration="700"data-aos-delay="500"
                     src="./Assets/Idée-parallaxe/row-1-column-1.png" alt="colonne1 amsterdam">
@@ -40,9 +42,10 @@
             </div>
             <h1  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-8xl text-white font-arvo">OUT AND <span id="test-typing"></span> </h1>
         </div>
-        <div id="section-container" class="bg-black px-4 
+        </div>
+        <div id="section-container" class=" px-4 
         2xl:px-60 xl:px-40 lg:px-20 md:px-10 relative">
-            <nav class=" bg-white font-varela text-2xl font-semibold relative -mt-16 py-4 rounded-t-3xl
+            <nav class="bg-white font-varela text-2xl font-semibold relative -mt-16 py-4 rounded-t-3xl
             lg:" data-aos="fade-up">
                 <ul class="divide-x-4 divide-black border-b-4 mx-12 pb-6 pt-4 border-black flex justify-around">
                     <li><a class="hover:text-purple-500 hover:text-3xl uppercase font-bold" href="#events"> Évènements</a></li>
@@ -128,7 +131,7 @@
             </section>
             <div class="bg-white separator-bot-2 h-36 w-full"></div>
             <div class="bg-white separator-top-2 h-36 w-full"></div>
-            <section class="bg-white relative w-full" id="our-values">
+            <section class="bg-white relative w-full p-12" id="our-values">
                 <div class="relative">
                     <div class="sticky top-0 h-screen flex flex-col items-center bg-white">
                        <h2 class="text-8xl font-raleway font-extrabold italic sm:my-3">Liberté</h2>
@@ -195,25 +198,20 @@
 
             </section>
             <div class="bg-white separator-bot-2 h-36 w-full"></div>
-            <div class="bg-white separator-top-2 h-36 w-full"></div>
-            <section class="bg-pink relative w-full" id="resources">
-
-            </section>
-            <div class="bg-white separator-bot h-36 w-full"></div>
-            <div class="bg-white separator-top h-36 w-full"></div>
+            <div class="bg-white separator-top-2 h-36 w-full" ></div>
             <section class="bg-white relative w-full" id="who">
 
             </section>
-            <div class="bg-white separator-bot-2 h-36 w-full"></div>
+            <div class="bg-white separator-bot h-36 w-full"></div>
             <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
-                <div class="bg-white separator-top-2 h-36 w-full" ></div>
+                <div class="bg-white separator-top h-36 w-full"></div>
                 <section class="bg-white relative z-10 w-full rounded-b-3xl" id="contact">
 
                 </section>
             </div>
         </div>
-        <footer class="-mt-20 relative">
-            <div class="flex h-auto w-full overflow-hidden justify-center bg-cover bg-black">
+        <footer class=" relative">
+            <!-- <div class="flex h-auto w-full overflow-hidden justify-center bg-cover -z-10 relative">
                 <img src="Assets/Idée-parallaxe/city-cut-in-10/image1x1.jpg" alt="colonne1 city" data-aos="fade-down" data-aos-duration="700" data-aos-delay="100">
                 <img src="Assets/Idée-parallaxe/city-cut-in-10/image2x1.jpg" alt="colonne2 city"data-aos="fade-up" data-aos-duration="700"data-aos-delay="200">
                 <img src="Assets/Idée-parallaxe/city-cut-in-10/image3x1.jpg" alt="colonne3 city"data-aos="fade-down" data-aos-duration="700"data-aos-delay="300">
@@ -224,9 +222,9 @@
                 <img src="Assets/Idée-parallaxe/city-cut-in-10/image8x1.jpg" alt="colonne8 city"data-aos="fade-up" data-aos-duration="700"data-aos-delay="300">
                 <img src="Assets/Idée-parallaxe/city-cut-in-10/image9x1.jpg" alt="colonne9 city"data-aos="fade-down" data-aos-duration="700"data-aos-delay="200">
                 <img src="Assets/Idée-parallaxe/city-cut-in-10/image10x1.jpg" alt="colonne10 city"data-aos="fade-up" data-aos-duration="700"data-aos-delay="100">
-            </div>
+            </div> -->
             
-            <div class=" w-full h-auto px-4 text-white flex flex-col bg-black  opacity-80 -my-[35rem]">
+            <div class="bg-black w-full h-auto mt-16 px-4 text-white flex flex-col opacity-80 ">
                 <div class="w-full text-7xl font-bold">
                     <a class="flex items-center ml-20" href="#home"><img class="w-40 h-40" src="Assets/images/Logos-Site/logo_lgbt-no-bg.png" alt=""><h2 class="w-full md:w-2/3 font-arvo">Out and Proud</h2></a>
                 </div>
