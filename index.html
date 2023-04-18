@@ -1,80 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link href="/dist/output.css" rel="stylesheet">:
+        <link href="/dist/output.css" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
         <link rel="preconnect" href="https://fonts.bunny.net">
-        <link
-            href="https://fonts.bunny.net/css?family=arvo:400,400i,700,700i|raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|varela-round:400"
-            rel="stylesheet">
+        <link href="https://fonts.bunny.net/css?family=arvo:400,400i,700,700i|raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|varela-round:400" rel="stylesheet">
         <script src="scripts/main.js" defer></script>
+        <script src="scripts/form.js" defer></script>
+        <script src="scripts/lgbtq+.js" defer></script>
     </head>
-    <body class="max-w-full m-0 p-0">
-        <div class="flex h-screen w-full overflow-hidden justify-center" >
-            <img class="h-full w-full" 
-            data-aos="fade-up" data-aos-duration="700"data-aos-delay="500"
-                src="./Assets/Idée-parallaxe/row-1-column-1.png" alt="">
-            <img class="h-full w-full" data-aos="fade-down"data-aos-duration="700"data-aos-delay="400"
-                src="./Assets/Idée-parallaxe/row-1-column-2.png" alt="">
-            <img class="h-full w-full" data-aos="fade-up"data-aos-duration="700"data-aos-delay="300"
-                src="./Assets/Idée-parallaxe/row-1-column-3.png" alt="">
-            <img class="h-full w-full" data-aos="fade-down"data-aos-duration="700"data-aos-delay="200"
-                src="./Assets/Idée-parallaxe/row-1-column-4.png" alt="">
-            <img class="h-full w-full" data-aos="fade-up"data-aos-duration="700"data-aos-delay="100"
-                src="./Assets/Idée-parallaxe/row-1-column-5.png" alt="">
-            <img class="h-full w-full" data-aos="fade-down"data-aos-duration="700"data-aos-delay="100"
-                src="./Assets/Idée-parallaxe/row-1-column-6.png" alt="">
-            <img class="h-full w-full" data-aos="fade-up"data-aos-duration="700"data-aos-delay="200"
-                src="./Assets/Idée-parallaxe/row-1-column-7.png" alt="">
-            <img class="h-full w-full" data-aos="fade-down"data-aos-duration="700"data-aos-delay="300"
-                src="./Assets/Idée-parallaxe/row-1-column-8.png" alt="">
-            <img class="h-full w-full" data-aos="fade-up"data-aos-duration="700"data-aos-delay="400"
-                src="./Assets/Idée-parallaxe/row-1-column-9.png" alt="">
-            <img class="h-full w-full" data-aos="fade-down"data-aos-duration="700"data-aos-delay="500"
-                src="./Assets/Idée-parallaxe/row-1-column-10.png" alt="">
+<body class="max-w-full m-0 p-0 selection:bg-fuchsia-300 selection:text-fuchsia-800"></body>
+        <div class="relative" id="home"  >
+            <div class="flex h-screen w-full overflow-hidden justify-center ">
+                <img class="h-full w-full" 
+                data-aos="fade-up" data-aos-duration="700"data-aos-delay="500"
+                    src="./Assets/Idée-parallaxe/row-1-column-1.png" alt="colonne1 amsterdam">
+                <img class="h-full w-full" data-aos="fade-down"data-aos-duration="700"data-aos-delay="400"
+                    src="./Assets/Idée-parallaxe/row-1-column-2.png" alt="colonne2 amsterdam">
+                <img class="h-full w-full" data-aos="fade-up"data-aos-duration="700"data-aos-delay="300"
+                    src="./Assets/Idée-parallaxe/row-1-column-3.png" alt="colonne3 amsterdam">
+                <img class="h-full w-full" data-aos="fade-down"data-aos-duration="700"data-aos-delay="200"
+                    src="./Assets/Idée-parallaxe/row-1-column-4.png" alt="colonne4 amsterdam">
+                <img class="h-full w-full" data-aos="fade-up"data-aos-duration="700"data-aos-delay="100"
+                    src="./Assets/Idée-parallaxe/row-1-column-5.png" alt="colonne5 amsterdam">
+                <img class="h-full w-full" data-aos="fade-down"data-aos-duration="700"data-aos-delay="100"
+                    src="./Assets/Idée-parallaxe/row-1-column-6.png" alt="colonne6 amsterdam">
+                <img class="h-full w-full" data-aos="fade-up"data-aos-duration="700"data-aos-delay="200"
+                    src="./Assets/Idée-parallaxe/row-1-column-7.png" alt="colonne7 amsterdam">
+                <img class="h-full w-full" data-aos="fade-down"data-aos-duration="700"data-aos-delay="300"
+                    src="./Assets/Idée-parallaxe/row-1-column-8.png" alt="colonne8 amsterdam">
+                <img class="h-full w-full" data-aos="fade-up"data-aos-duration="700"data-aos-delay="400"
+                    src="./Assets/Idée-parallaxe/row-1-column-9.png" alt="colonne9 amsterdam">
+                <img class="h-full w-full" data-aos="fade-down"data-aos-duration="700"data-aos-delay="500"
+                    src="./Assets/Idée-parallaxe/row-1-column-10.png" alt="colonne10 amsterdam">
+            </div>
+            <h1  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-8xl text-white font-arvo">OUT AND <span id="test-typing"></span> </h1>
         </div>
-        <div id="section-container" class="bg-black px-80 
-        2xl:px-60 xl:px-40 lg:px-20 md:px-10 sm:px-5">
-            <nav class=" bg-white text-2xl font-semibold relative -mt-16 py-4 rounded-t-3xl
+        <div id="section-container" class=" bg-black px-4 
+        2xl:px-60 xl:px-40 lg:px-20 md:px-10 relative">
+            <nav class="bg-white font-varela text-2xl font-semibold relative -mt-16 py-4 rounded-t-3xl
             lg:" data-aos="fade-up">
                 <ul class="flex justify-around w-full">
-                    <li><a href="#"> Évènements</a></li>
-                    <li><a href="#">Nos Valeurs</a></li>
-                    <li><a href="#">Nous Aider</a></li>
-                    <li><a href="#">Membres</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a class="font-bold" href="#events"> Évènements</a></li>
+                    <li><a class="font-bold" href="#our-values">Nos Valeurs</a></li>
+                    <li><a class="font-bold" href="#help-us">Nous Aider</a></li>
+                    <li><a class="font-bold" href="#resources">Nos Ressources</a></li>
+                    <li><a class="font-bold" href="#who"> À Propos</a></li>
+                    
+                    <li><a class="font-bold" href="#contact">Contacts</a></li>
                 </ul>
 
             </nav>
-            <section class="bg-white" id="landing">
-
-            </section>
-            <section class="bg-white" id="events">
-
-            </section>
-            <section class="bg-white" id="help-us">
-
-            </section>
-            <section class="bg-white" id="our-values">
-
-            </section>
-            <section class="bg-white" id="who">
-
-            </section>
-            <section class="bg-white" id="resources">
-
-            </section>
-            <section class="bg-white" id="contact">
-
-            </section>
             
-            
+            <section class="bg-white relative w-full" id="landingg">
+                <div class="flex justify-center " id="rainbow-cards">
+                    <div class="bg-blue rounded-full h-80 w-16 p-4 mx-1 group transition-[height] transition-[width] duration-700 overflow-hidden shrink-0">
+                        <div class="bg-white rounded-full text-center p-1 h-10 group-hover:h-72 transition-all overflow-hidden">
+                            <span class="font-arvo font-semibold text-xl">L</span>
+                            <span class="hidden font-arvo font-semibold text-xl overflow-wrap-anywhere w-4 mx-auto">ESBIENNE</span>
+                            <div class="hidden">
+                                <p class="font-arvo font-semibold m-4">LESBIENNE</p>
+                                <p class="font-arvo m-4">Une femme lesbienne va être attirée par les autres femmes. Synonyme à l’homosexualité, mais particulier aux femmes, le lesbianisme est aussi appelé le saphisme ou homosexualité féminine.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-pink rounded-full h-80 w-16 p-4 mx-1 group transition-[height] transition-[width] duration-700 overflow-hidden shrink-0">
+                        <div class="bg-white rounded-full text-center p-1 h-10 group-hover:h-72 transition-all overflow-hidden">
+                            <span class="font-arvo font-semibold text-xl">G</span>
+                            <span class="hidden font-arvo font-semibold text-xl overflow-wrap-anywhere w-4 mx-auto">AY</span>
+                            <div class="hidden">
+                                <p class="font-arvo font-semibold m-4">GAY</p>
+                                <p class="font-arvo m-4">Un gay est un homme qui va éprouver une attirance sexuelle pour d’autres hommes. Terme plus ou moins synonyme à homosexuel.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-red rounded-full h-80 w-16 p-4 mx-1 group transition-[height] transition-[width] duration-700 overflow-hidden shrink-0">
+                        <div class="bg-white rounded-full text-center p-1 h-10 group-hover:h-72 transition-all overflow-hidden">
+                            <span class="font-arvo font-semibold text-xl">B</span>
+                            <span class="hidden font-arvo font-semibold text-xl overflow-wrap-anywhere w-4 mx-auto">ISEXUEL</span>
+                            <div class="hidden">
+                                <p class="font-arvo font-semibold m-4">BISEXUEL·LE</p>
+                                <p class="font-arvo m-4">Une personne bisexuelle est une personne qui va éprouver une attirance pour les genres binaires mis en valeur dans notre société : les hommes et les femmes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-orange rounded-full h-80 w-16 p-4 mx-1 group transition-[height] transition-[width] duration-700 overflow-hidden shrink-0">
+                        <div class="bg-white rounded-full text-center p-1 h-10 group-hover:h-72 transition-all overflow-hidden">
+                            <span class="font-arvo font-semibold text-xl">T</span>
+                            <span class="hidden font-arvo font-semibold text-xl overflow-wrap-anywhere w-4 mx-auto">RANS</span>
+                            <div class="hidden">
+                                <p class="font-arvo font-semibold m-4">TRANSGENRE</p>
+                                <p class="font-arvo m-4">Un individu transgenre ne s’identifie pas au genre qui lui a été assigné à la naissance. C’est également le terme utilisé pour désigner une personne dont le sexe biologique est exclu du spectre binaire homme/femme.</p>
+                            </div>
+                        </div>
+                    </div>        
+                    <div class="bg-yellow rounded-full h-80 w-16 p-4 mx-1 group transition-[height] transition-[width] duration-700 overflow-hidden shrink-0">
+                        <div class="bg-white rounded-full text-center p-1 h-10 group-hover:h-72 transition-all overflow-hidden">
+                            <span class="font-arvo font-semibold text-xl">Q</span>
+                            <span class="hidden font-arvo font-semibold text-xl overflow-wrap-anywhere w-4 mx-auto">UEER</span>
+                            <div class="hidden">
+                                <p class="font-arvo font-semibold m-4">QUEER</p>
+                                <p class="font-arvo m-4">Queer est le terme utilisé pour qualifier toutes les personnes qui sont exclues de la vision binaire homme/femme et de l’hétérosexualité, ainsi que celles ne souhaitant mettre de labels sur leur orientation sexuelle ou identité de genre.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-green rounded-full h-80 w-16 p-4 mx-1 group transition-[height] transition-[width] duration-700 overflow-hidden shrink-0">
+                        <div class="bg-white rounded-full text-center p-1 h-10 group-hover:h-72 transition-[height] overflow-hidden">
+                            <span class="font-arvo font-semibold text-xl">+</span>
+                            <span class="hidden font-arvo font-semibold text-xl overflow-wrap-anywhere w-4 mx-auto">AUTRES</span>
+                            <div class="hidden">
+                                <p class="font-arvo font-semibold m-4">AUTRES</p>
+                                <p class="font-arvo m-4">Intersexe, pansexuel, aromantique, aucun sigle ne pourra englober l'intégralité des spectres d'identité de genre et de sexe. C'est pourquoi tout ce qui n'est pas représenté directement dans ce sigle se voit tout de même reconnu grâce à un +.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <div class="bg-white separator-bot h-36 w-full"></div>
+            <div class="bg-white separator-top h-36 w-full"></div>
+            <section class="bg-cyan-400 relative w-full" id="events">
+
+            </section>
+            <div class="bg-white separator-bot-2 h-36 w-full"></div>
+            <div class="bg-white separator-top-2 h-36 w-full"></div>
+            <section class="bg-purple-500 relative w-full" id="our-values">
+                <div class="relative">
+                    <div class="sticky top-0 h-screen flex flex-col items-center bg-green-400">
+                       <h2 class="text-8xl font-raleway font-extrabold italic sm:my-3">Liberté</h2>
+                       <div class="flex flex-col sm:flex-row h-full w-full">
+                          <div class="h-full w-full">
+                             <img class="object-contain object-left-top h-full w-full" src="/Assets/images/gaycouple3.jpg"
+                                alt="lesbian-couple">
+                          </div>
+                          <div
+                             class="w-full grid justify-items-center text-white sm:content-center sm:mx-7 -mt-32 sm:mt-0 py-1 bg-gray-400/50 sm:bg-white sm:text-black text-2xl sm:text-7xl font-raleway  text-black sm:font-allura">
+                             <p>Aimer sans frontières.</p>
+                          </div>
+                       </div>
+                    </div>
+              
+              
+                    <div class="sticky top-0 h-screen flex flex-col items-center bg-indigo-600 sm:bg-indigo-600 text-white">
+                       <h2 class="text-8xl font-raleway font-extrabold italic sm:text-white sm:my-3">Égalité</h2>
+                       <div class="flex flex-col sm:flex-row h-full w-full">
+                          <div class="h-full w-full">
+                             <img class="object-contain object-left-top h-full w-full sm:my-0" src="/Assets/images/gaycouple2.jpg"
+                                alt="boys-tender-moments">
+                          </div>
+                          <div
+                             class="w-full grid justify-items-center sm:content-center sm:mx-4 -mt-32 sm:mt-0 py-1 bg-gray-400/50 sm:bg-inherit text-2xl sm:text-7xl sm:bg-indigo-600 font-raleway sm:font-allura text-white">
+                             <p>Aimer sans se cacher.</p>
+                          </div>
+                       </div>
+                    </div>
+              
+              
+              
+                    <div class="sticky top-0 h-screen flex flex-col items-center bg-purple-600 text-white">
+                       <h2 class="text-8xl font-raleway font-extrabold italic sm:text-white sm:my-3">Diversité</h2>
+                       <div class="flex flex-col sm:flex-row h-full w-full">
+                          <div class="h-full w-full">
+                             <img class="object-contain object-left-top h-full w-full" src="/Assets/images/trnsgd.jpg"
+                                alt="queerperson">
+                          </div>
+                          <div
+                             class="w-full grid justify-items-center sm:content-center sm:mx-4 -mt-32 sm:mt-0 py-1 bg-gray-400/50 text-2xl sm:text-7xl text-white sm:bg-purple-600 font-raleway sm:font-allura">
+                             <p>Accepter les différences des autres.</p>
+                          </div>
+                       </div>
+                    </div>
+              
+              
+                    <div class="sticky top-0 h-screen flex flex-col items-center  bg-neutral-800  text-black sm:object-contain">
+                       <h2 class="text-8xl  font-raleway font-extrabold italic text-white sm:font-varela sm:my-3">Respect</h2>
+                       <div class="flex flex-col sm:flex-row h-full w-full sm: bg-neutral-800">
+                          <div class="h-full w-full overflow-hidden bg-neutral-800 lg:bg-neutral-800">
+                             <img src="/Assets/images/queer.jpg" alt="queerperson">
+                          </div>
+                          <div class="w-full grid justify-items-center bg-gray-400/50 sm:bg-neutral-800 text-2xl -mt-32 sm:content-center sm:mx-16 sm:mt-0 py-1 sm:text-7xl text-white font-raleway sm:font-allura">
+                             <p>Agir positivement envers les autres.</p>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+            </section>
+            <div class="bg-white separator-bot h-36 w-full"></div>
+            <div class="bg-white separator-top h-36 w-full"></div>
+            <section class="bg-white relative w-full" id="help-us">
+
+            </section>
+            <div class="bg-white separator-bot-2 h-36 w-full"></div>
+            <div class="bg-white separator-top-2 h-36 w-full"></div>
+            <section class="bg-pink relative w-full h-full" id="resources">
+
+            </section>
+            <div class="bg-white separator-bot h-36 w-full"></div>
+            <div class="bg-white separator-top h-36 w-full"></div>
+            <section class="bg-white relative w-full" id="who">
+
+            </section>
+            <div class="bg-white separator-bot-2 h-36 w-full"></div>
+            <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                <div class="bg-white separator-top-2 h-36 w-full" ></div>
+                <section class="bg-white relative z-10 w-full rounded-b-3xl" id="contact">
+
+                </section>
+            </div>
         </div>
+        <footer class="-mt-20 relative">
+            <div class="flex h-auto w-full overflow-hidden justify-center bg-cover bg-black">
+                <img src="Assets/Idée-parallaxe/city-cut-in-10/image1x1.jpg" alt="colonne1 city" data-aos="fade-down" data-aos-duration="700" data-aos-delay="100">
+                <img src="Assets/Idée-parallaxe/city-cut-in-10/image2x1.jpg" alt="colonne2 city"data-aos="fade-up" data-aos-duration="700"data-aos-delay="200">
+                <img src="Assets/Idée-parallaxe/city-cut-in-10/image3x1.jpg" alt="colonne3 city"data-aos="fade-down" data-aos-duration="700"data-aos-delay="300">
+                <img src="Assets/Idée-parallaxe/city-cut-in-10/image4x1.jpg" alt="colonne4 city"data-aos="fade-up" data-aos-duration="700"data-aos-delay="400">
+                <img src="Assets/Idée-parallaxe/city-cut-in-10/image5x1.jpg" alt="colonne5 city"data-aos="fade-down" data-aos-duration="700"data-aos-delay="500">
+                <img src="Assets/Idée-parallaxe/city-cut-in-10/image6x1.jpg" alt="colonne6 city"data-aos="fade-up" data-aos-duration="700"data-aos-delay="500">
+                <img src="Assets/Idée-parallaxe/city-cut-in-10/image7x1.jpg" alt="colonne7 city"data-aos="fade-down" data-aos-duration="700"data-aos-delay="400">
+                <img src="Assets/Idée-parallaxe/city-cut-in-10/image8x1.jpg" alt="colonne8 city"data-aos="fade-up" data-aos-duration="700"data-aos-delay="300">
+                <img src="Assets/Idée-parallaxe/city-cut-in-10/image9x1.jpg" alt="colonne9 city"data-aos="fade-down" data-aos-duration="700"data-aos-delay="200">
+                <img src="Assets/Idée-parallaxe/city-cut-in-10/image10x1.jpg" alt="colonne10 city"data-aos="fade-up" data-aos-duration="700"data-aos-delay="100">
+            </div>
+            
+            <div class=" w-full h-auto px-4 text-white flex flex-col bg-black  opacity-80 -my-[35rem]">
+                <div class="w-full text-7xl font-bold">
+                    <a class="flex items-center ml-20" href="#home"><img class="w-40 h-40" src="Assets/images/Logos-Site/logo_lgbt-no-bg.png" alt=""><h2 class="w-full md:w-2/3 font-arvo">Out and Proud</h2></a>
+                </div>
+                <div class="flex mt-8 flex-col md:flex-row md:justify-between">
+                    <p class="w-full md:w-2/3 md text-white font-raleway px-20 py-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam non nisi non auctor. Nunc vestibulum mi eget nibh ultrices.</p>
+                    <div class="flex flex-row space-x-8 items-center justify-between px-10">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <svg width="12" height="24" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.89782 12V6.53514H5.67481L5.93895 4.39547H3.89782V3.03259C3.89782 2.41516 4.06363 1.99243 4.91774 1.99243H6V0.0847928C5.47342 0.0262443 4.94412 -0.00202566 4.41453 0.000112795C2.84383 0.000112795 1.76542 0.994936 1.76542 2.82122V4.39147H0V6.53114H1.76928V12H3.89782Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <svg width="24" height="26" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.99536 2.91345C5.17815 2.91345 4.39441 3.23809 3.81655 3.81594C3.2387 4.3938 2.91406 5.17754 2.91406 5.99475C2.91406 6.81196 3.2387 7.5957 3.81655 8.17356C4.39441 8.75141 5.17815 9.07605 5.99536 9.07605C6.81257 9.07605 7.59631 8.75141 8.17417 8.17356C8.75202 7.5957 9.07666 6.81196 9.07666 5.99475C9.07666 5.17754 8.75202 4.3938 8.17417 3.81594C7.59631 3.23809 6.81257 2.91345 5.99536 2.91345ZM5.99536 7.99586C5.46446 7.99586 4.9553 7.78496 4.57989 7.40955C4.20448 7.03415 3.99358 6.52499 3.99358 5.99408C3.99358 5.46318 4.20448 4.95402 4.57989 4.57861C4.9553 4.20321 5.46446 3.99231 5.99536 3.99231C6.52626 3.99231 7.03542 4.20321 7.41083 4.57861C7.78624 4.95402 7.99714 5.46318 7.99714 5.99408C7.99714 6.52499 7.78624 7.03415 7.41083 7.40955C7.03542 7.78496 6.52626 7.99586 5.99536 7.99586Z" fill="white"/>
+                                <path d="M9.19863 3.51848C9.59537 3.51848 9.91698 3.19687 9.91698 2.80013C9.91698 2.4034 9.59537 2.08179 9.19863 2.08179C8.8019 2.08179 8.48029 2.4034 8.48029 2.80013C8.48029 3.19687 8.8019 3.51848 9.19863 3.51848Z" fill="white"/>
+                                <path d="M11.6821 2.06975C11.5279 1.67138 11.2921 1.30961 10.99 1.00759C10.6879 0.705576 10.326 0.469972 9.92759 0.31586C9.46135 0.140842 8.9688 0.0462069 8.4709 0.0359839C7.82919 0.00799638 7.62594 0 5.99867 0C4.37139 0 4.16282 -6.70254e-08 3.52643 0.0359839C3.02891 0.0456842 2.53671 0.140339 2.07108 0.31586C1.67255 0.469792 1.31059 0.705333 1.00844 1.00737C0.706289 1.30941 0.47061 1.67127 0.316526 2.06975C0.141474 2.53595 0.0470554 3.02855 0.0373167 3.52643C0.00866281 4.16748 0 4.37072 0 5.99867C0 7.62594 -4.96485e-09 7.83319 0.0373167 8.4709C0.0473123 8.96935 0.14127 9.46113 0.316526 9.92825C0.471042 10.3266 0.70695 10.6883 1.00918 10.9903C1.3114 11.2923 1.6733 11.5279 2.07175 11.6821C2.5365 11.8642 3.0289 11.9656 3.52777 11.982C4.16948 12.01 4.37272 12.0187 6 12.0187C7.62728 12.0187 7.83585 12.0187 8.47223 11.982C8.97008 11.9719 9.46262 11.8775 9.92892 11.7028C10.3272 11.5483 10.689 11.3125 10.9911 11.0104C11.2932 10.7083 11.529 10.3466 11.6835 9.94825C11.8587 9.48179 11.9527 8.99 11.9627 8.49156C11.9913 7.85051 12 7.64727 12 6.01932C12 4.39138 12 4.18481 11.9627 3.54709C11.9549 3.04216 11.86 2.54237 11.6821 2.06975ZM10.8705 8.42159C10.8662 8.80562 10.7961 9.18608 10.6633 9.54642C10.5632 9.80555 10.41 10.0409 10.2135 10.2372C10.017 10.4336 9.78162 10.5867 9.52243 10.6866C9.16608 10.8188 8.78967 10.8889 8.4096 10.8938C7.77654 10.9231 7.59796 10.9305 5.97468 10.9305C4.35007 10.9305 4.18414 10.9305 3.53909 10.8938C3.15921 10.8892 2.78298 10.8191 2.42692 10.6866C2.16683 10.5873 1.93048 10.4345 1.73316 10.2381C1.53584 10.0417 1.38194 9.80605 1.28143 9.54642C1.15045 9.18995 1.08039 8.81398 1.07419 8.43425C1.04554 7.8012 1.03887 7.62261 1.03887 5.99933C1.03887 4.37539 1.03887 4.20946 1.07419 3.56375C1.0785 3.17993 1.14859 2.7997 1.28143 2.43958C1.48467 1.91382 1.90116 1.5 2.42692 1.29876C2.78316 1.16691 3.15928 1.09682 3.53909 1.09151C4.17281 1.06286 4.35073 1.05486 5.97468 1.05486C7.59862 1.05486 7.76522 1.05486 8.4096 1.09151C8.7897 1.09609 9.16617 1.1662 9.52243 1.29876C9.7816 1.39889 10.017 1.55211 10.2134 1.74858C10.4099 1.94504 10.5631 2.18041 10.6633 2.43958C10.7942 2.79606 10.8643 3.17203 10.8705 3.55175C10.8992 4.18547 10.9065 4.36339 10.9065 5.98734C10.9065 7.61062 10.9065 7.78521 10.8778 8.42226H10.8705V8.42159Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <svg width="26" height="18" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.7355 1.415C12.6616 1.14357 12.517 0.896024 12.3162 0.697014C12.1154 0.498004 11.8654 0.354468 11.5911 0.280692C10.5739 0.00450089 6.5045 4.87928e-06 6.5045 4.87928e-06C6.5045 4.87928e-06 2.43578 -0.00449139 1.41795 0.259496C1.14379 0.336667 0.894302 0.482233 0.693428 0.68222C0.492554 0.882207 0.347041 1.1299 0.270859 1.40152C0.00259923 2.40737 9.51671e-07 4.49358 9.51671e-07 4.49358C9.51671e-07 4.49358 -0.0025972 6.59006 0.263714 7.58564C0.413109 8.13609 0.851549 8.57094 1.40885 8.71931C2.43643 8.9955 6.49476 9 6.49476 9C6.49476 9 10.5641 9.00449 11.5813 8.74115C11.8557 8.6675 12.106 8.52429 12.3073 8.32569C12.5086 8.12709 12.6539 7.87996 12.729 7.60876C12.998 6.60355 12.9999 4.51798 12.9999 4.51798C12.9999 4.51798 13.0129 2.42086 12.7355 1.415ZM5.20282 6.42628L5.20607 2.57244L8.58823 4.50257L5.20282 6.42628Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+
+
+                </div>
+                <div class="flex flex-col relative">
+                    <div class=" mt-20 mb-12 justify-around font-varela text-2xl flex flex-col md:flex-row">
+                        <a href="#events" class="hidden md:block cursor-pointer text-white hover:text-purple-500 uppercase">Évènements</a>
+                        <a href="#our-values" class="hidden md:block cursor-pointer text-white hover:text-cyan-500 uppercase">Nos Valeurs</a>
+                        <a href="#help-us" class="hidden md:block cursor-pointer text-white hover:text-pink uppercase">Nous Aider</a>
+                        <a href="#resources" class="hidden md:block cursor-pointer text-white hover:text-orange uppercase">Nos Ressources</a>
+                        <a class="hidden md:block cursor-pointer text-white hover:text-yellow uppercase" href="#who"> À Propos</a>
+                        <a href="#contact" class="hidden md:block cursor-pointer text-white hover:text-green uppercase">Contacts</a>
+                        
+                    </div>
+                    <hr class="border-white"/>
+                    <p class="w-full text-center my-8 font-raleway text-white">Copyright © 2023 DivClass</p>
+                    
+                </div>
+                
+            </div>
+            <a id="to-top-button" class=" hidden fixed z-50 bottom-5 right-5" href="#home"><img class="w-16 h-16 rotate-180" src="Assets/idée maquette et back2top/fleche-vers-le-bas.png" alt=""></a>
+           
+        </footer>
+        <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed("#test-typing", {
+                strings: ["LOUD", "PROUT", "PROUD"],
+                typeSpeed: 250,
+                backSpeed: 100,
+                loop: false,
+            })
+        </script>
+        <script src="scripts/back2top.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>AOS.init();</script>
     </body>
 </html>
+
+

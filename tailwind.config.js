@@ -10,8 +10,9 @@ module.exports = {
         'orange': '#FB7306',
         'yellow': '#F7C809',
         'green': '#077931',
-        'white': '#FCFFFD',
         'black': '#343030',
+        'white': '#FCFFFD',
+        'blue-contact': '#4fc7c5',
       },
       fontFamily: {
         'arvo': ['Arvo', 'serif'],
@@ -21,8 +22,18 @@ module.exports = {
         'allura': ['Allura', 'handwriting' ],
         'yellowtail' : ['Yellowtail', 'handwriting']
       },
+      backgroundImage: {
+        'separator-top': 'linear-gradient(to bottom right, #FCFFFD 50%, #0000 50%)',
+        'separator-bot': 'linear-gradient(to bottom right, #0000 50%, #FCFFFD 50%)',
+        'smoke': 'url(../images/rainbowSmoke2.png)',
+      },
+      maxWidth: {
+        '15rem': '15rem',
+      },
+      minWidth: {
+        '10rem': '10rem',        
+      },
     },
   },
   plugins: [],
 }
-
