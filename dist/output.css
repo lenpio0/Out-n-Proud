@@ -729,6 +729,10 @@ video {
   margin: 1.5rem;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .-my-\[35rem\] {
   margin-top: -35rem;
   margin-bottom: -35rem;
@@ -975,6 +979,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[700px\] {
+  width: 700px;
 }
 
 .min-w-10rem {
@@ -2956,7 +2964,7 @@ video {
           clip-path: polygon(100% 100%, 100% 0, 0 0);
 }
 
-.card-active {
+.card-active{
   width: 20rem;
   border-radius: 1.5rem;
 }
@@ -3187,6 +3195,10 @@ video {
 
   .sm\:content-center {
     align-content: center;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
   }
 
   .sm\:bg-indigo-600 {

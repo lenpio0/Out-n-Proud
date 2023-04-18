@@ -45,5 +45,14 @@ for (let i = 0; i < rainbowCards.children.length; i++) {
             currentWord.classList.add('hidden');
             currentDef.classList.remove('hidden');
         }
+        for (let i = 0; i < rainbowCards.children.length; i++) {
+            if (currentElement.classList.contains('card-active')) {
+                rainbowCards.classList.add('w-700px');
+                break;
+            }
+            else {
+                rainbowCards.classList.remove('w-700px');
+            }
+        }
     })
 }
