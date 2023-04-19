@@ -9,7 +9,7 @@ function loadHTML(html, id){
 loadHTML('landing.html', 'landing');
 loadHTML('events.html', 'events');
 loadHTML('help-us.html', 'help-us');
-loadHTML('our-values.html', 'our-values');
+// loadHTML('our-values.html', 'our-values');
 loadHTML('who.html', 'who');
 loadHTML('resources.html', 'resources');
 loadHTML('contact.html', 'contact');

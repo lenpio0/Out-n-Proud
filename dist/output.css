@@ -965,6 +965,14 @@ video {
   height: 100vh;
 }
 
+.max-h-700px {
+  max-height: 700px;
+}
+
+.max-h-750px {
+  max-height: 750px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -3363,6 +3371,11 @@ video {
 
   .sm\:text-7xl {
     font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .sm\:text-8xl {
+    font-size: 6rem;
     line-height: 1;
   }
 

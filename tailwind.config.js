@@ -27,6 +27,10 @@ module.exports = {
         'separator-bot': 'linear-gradient(to bottom right, #0000 50%, #FCFFFD 50%)',
         'smoke': 'url(../images/rainbowSmoke2.png)',
       },
+      maxHeight: {
+        '750px': '750px',
+        '700px': '700px',
+      },
       maxWidth: {
         '15rem': '15rem',
       },
