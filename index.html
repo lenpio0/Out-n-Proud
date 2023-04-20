@@ -4,16 +4,17 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Out n' Proud</title>
         <link href="/dist/output.css" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=arvo:400,400i,700,700i|raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|varela-round:400|allura:400|yellowtail:400|birthstone:400" rel="stylesheet">
-        <script src="scripts/main.js" defer></script>
         <script src="scripts/form.js" defer></script>
         <script src="scripts/lgbtq+.js" defer></script>
         <script src="scripts/hide.js" defer></script>
         <script src="scripts/burger.js" defer></script>
+        <script src="scripts/event.js" defer></script>
+
     </head>
 <body class="max-w-full m-0 pt-[700px] selection:bg-fuchsia-300 selection:text-fuchsia-800 overflow-x-hidden">
     <div class="fixed top-0 -z-20 w-full min-w-[900px]">
@@ -47,7 +48,7 @@
         <div id="section-container" class="px-4 2xl:px-60 xl:px-40 lg:px-20 md:px-10 relative">
             <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                 <nav class="bg-white font-varela text-2xl font-semibold relative -mt-16 py-4 rounded-t-3xl" data-aos="fade-up">
-                    <a id="open" class="block bg-menu-open w-10 h-10 bg-contain m-auto lg:hidden"></a>
+                    <a id="open" class="block bg-menu-open w-10 h-10 mb-4 bg-contain m-auto lg:hidden hover:cursor-pointer"></a>
                     <ul id="menu" class="border-t-2 lg:border-t-0 border-b-2 mx-4 pb-6 pt-4 border-black lg:flex flex-col lg:flex-row justify-around hidden">
                         <li><a class="hover:text-purple-500 text-lg uppercase px-1 font-bold" href="#events">Évènements</a></li>
                         <li><a class="hover:text-cyan-500 text-lg uppercase px-1 font-bold" href="#our-values">Nos Valeurs</a></li>
@@ -57,7 +58,7 @@
                         <li><a class="hover:text-green text-lg uppercase px-1 font-bold" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
-                <section class="bg-white relative w-full overflow-scroll" id="landingg">
+                <section class="bg-white relative w-full overflow-scroll" id="landing">
                     <div class="flex sm:justify-center mx-auto my-16" id="rainbow-cards">
                         <div class="bg-blue rounded-full h-80 w-16 p-4 mx-1 group transition-[height] transition-[width] duration-700 overflow-hidden shrink-0">
                             <div class="bg-white rounded-full text-center p-1 h-10 group-hover:h-72 transition-all overflow-hidden">
@@ -125,7 +126,7 @@
             </div>
             <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
                 <div class="bg-white separator-top h-36 w-full"></div>
-                <section class=" bg-[#ffffff] relative w-full h-screen bg-smoke-2 bg-cover bg-no-repeat bg-[50px_0px] sm:bg-[200px_0px]" id="eventss">
+                <section class=" bg-[#ffffff] relative w-full h-screen bg-smoke-2 sm:bg-80% bg-cover bg-no-repeat bg-[50px_0px] sm:bg-[200px_0px]" id="events">
                     <div class="flex justify-center place-items-center flex-col">
                         <div><h2 class="text-3xl font-raleway rounded-xl p-2 font-extrabold italic text-5xl text-black">Évènements</h2></div>
                         <div class="slider mt-72 relative md:w-[200px] md:h-[200px] hidden lg:flex">
@@ -211,38 +212,125 @@
             <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
                 <div class="bg-white separator-top h-36 w-full"></div>
                 <section class="bg-white relative w-full" id="help-us">
-
+                    <label class="justify-center flex font-raleway font-extrabold italic pb-12 text-5xl text-black" data-aos="flip-up"
+                    data-aos-delay="300" data-aos-once="true">Nous aider
+                    </label>
+                    <div class=" lg:flex lg:justify-start xl:justify-evenly bg-smoke bg-contain bg-no-repeat pb-8">
+                        <div class="w-50 bg-slate-100 shadow-2xl drop-shadow-sm rounded-3xl m-6 text-justify lg:w-[450px] xl:w-[600px]" data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true">
+                            <h2 class="text-center p-4 font-varela font-semibold text-3xl">Faire un don</h2>
+                            <p class="text-justify mx-4 font-arvo">Soutenez l'association LGBT en faisant un don aujourd'hui pour aider à promouvoir l'égalité et la diversité, et pour lutter contre la discrimination et l'intolérance. Chaque don compte pour soutenir une cause juste et essentielle pour notre société.</p>
+                            <div class="flex justify-center px-4 py-2 lg:pt-24 xl:pb-6 2xl:-mt-6">
+                                <div class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
+                                    <div class="group-hover:animate-spin w-full h-full bg-gradient-to-r from-[#ff8a05] via-[#ff5478] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#ff5478] group-hover:to-[#ff8a05] absolute"></div>
+                                    <div class="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md duration-1000">
+                                    <button class="relative text-white font-raleway italic">DONNE LES SOUS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-50 bg-slate-100 shadow-2xl drop-shadow-sm  rounded-3xl m-6 text-justify lg:w-[500px] xl:w-[600px]" data-aos="flip-down"
+                    data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true">
+                        <h2 class="text-center font-varela font-semibold p-4 text-3xl">Devenir membre</h2>
+                        <p class="text-center m-4 font-arvo">Rejoignez-nous en devenant membre de notre association LGBT et aidez-nous à promouvoir nos valeurs. En tant que membre, vous aurez la possibilité de participer à des événements et des activités exclusives, de rencontrer des personnes partageant les mêmes idées et de contribuer à une cause juste et essentielle pour notre société. Inscrivez-vous dès maintenant et faites partie de notre communauté engagée et solidaire.</p>
+                        <div class="flex justify-center px-4 py-2 lg:pb-10 xl:pb-10">
+                            <div class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md ">
+                                <div class="w-full h-full bg-gradient-to-br from-[#ff8a05] via-[#ff5478] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#ff5478] group-hover:to-[#ff8a05] absolute"></div>
+                                <div class="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
+                                    <button class="relative text-white font-raleway italic">REJOINS LA COMMU</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </section>
                 <div class="bg-white separator-bot-2 h-36 w-full"></div>
             </div>
             <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                 <div class="bg-white separator-top-2 h-36 w-full" ></div>
                 <section class="bg-white relative w-full" id="who">
-
+                    <h2 class="font-raleway italic font-extrabold flex justify-center pt-6 text-5xl text-black">Qui sommes nous ?</h2>
+                    <div class="xl:flex xl:justify-around pb-16">
+                        <div class="w-50 bg-slate-100 shadow-2xl drop-shadow-sm rounded-3xl m-6 text-justify xl:w-[30%]" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true">
+                            <h2 class="text-center m-4 font-varela font-semibold pt-4 text-3xl">Vincent
+                            </h2>
+                            <div class="md:flex xl:block ">
+                                <img src="assets/images/vincent.png" alt="Vincent"
+                                    class="px-8 drop-shadow-4xl contrast-125 md:pt-6 mx-auto sm:h-64">
+                                <p class="text-justify m-4 font-arvo">
+                                    Jeune bisontin hétérosexuel, aime les voyages et la cuisine notamment les plats mijotés de sa grand-mère
+                                    qui est aussi sa voisine. Lors de son voyage au Kenya en 2016, il a été profondément touché par les
+                                    violences de toutes
+                                    formes contres les homosexuels. Là-bas, l’homosexualité est un crime passible de 14 ans de prison. A son
+                                    retour,
+                                    il s’est informé sur la situation des personnes LGBTQIA+ en France et il a pu constater qu’elles sont
+                                    encore
+                                    souvent victimes de discrimination et de violences. Il s’engage alors pour soutenir cette communauté et
+                                    créé
+                                    l’association bisontine Out ‘n Proud avec Cédric.
+                                </p>
+                            </div>
+                            <div class="flex justify-center px-4 py-2">
+                            </div>
+                        </div>
+                        <div class="w-50 bg-slate-100 shadow-2xl drop-shadow-sm rounded-3xl m-6 text-justify xl:w-[30%]" data-aos="fade-up"
+                            data-aos-duration="2000" data-aos-once="true">
+                            <h2 class="text-center m-4 font-varela font-semibold pt-4 text-3xl">Cédric
+                            </h2>
+                            <div class="md:flex xl:block">
+                                <img src="assets/images/cedric.png" alt="Cédric"
+                                    class="px-8 drop-shadow-2xl contrast-125 md:flex md:pt-4 mx-auto sm:h-64">
+                                <p class="text-justify m-4 font-arvo ">
+                                    Artiste bisontin hétérosexuel, il a été témoin d’actes de violences et des préjugés subies par sa soeur
+                                    lesbienne. Souvent, il s’est senti impuissant face à la douleur de sa soeur et à la frustration qu’elle
+                                    a pu
+                                    ressentir. Après de longues échanges avec son ami de longue date Vincent, ils décident de créer
+                                    l’association
+                                    Out’n Proud pour soutenir concrètement la communauté LGBTQIA+.
+                                </p>
+                            </div>
+                            <div class="flex justify-center px-4 py-2 lg:pt-14">
+                            </div>
+                        </div>
+                        <div class="w-50 bg-slate-100 shadow-2xl drop-shadow-sm rounded-3xl m-6 text-justify xl:w-[30%]" data-aos="fade-left"
+                            data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true">
+                            <h2 class="text-center m-4 font-varela font-semibold pt-4 text-3xl">Dagga
+                            </h2>
+                            <div class="md:flex xl:block">
+                                <img src="assets/images/Dagga.png" alt="Dagga"
+                                    class="px-8 drop-shadow-2xl contrast-125 xl:pt-6 mx-auto sm:h-64">
+                                <p class="text-justify m-4 font-arvo">
+                                    Dagga, la belle chatte de Vincent, se nourrit de croquettes exclusivement bio et locales et elle porte
+                                    avec
+                                    fierté son collier arc-en-ciel pour soutenir la cause de son maître.
+                                </p>
+                            </div>
+                            <div class="flex justify-center px-4 py-2 pb">
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <div class="bg-white separator-bot h-36 w-full"></div>
             </div>
             <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
                 <div class="bg-white separator-top h-36 w-full"></div>
                 <section class="bg-white relative z-10 w-full rounded-b-3xl" id="contact">
-
+                    <form method="POST" action="https://formspree.io/f/xwkjwbbk" id="contact-form" class="flex flex-col justify-around bg-smoke bg-contain bg-no-repeat pt-8 pb-16">
+                        <label class="text-center font-raleway font-extrabold italic pb-12 text-5xl text-black" data-aos="flip-up" data-aos-delay="300" data-aos-once="true">Nous contacter</label>
+                        <div class="flex flex-col lg:items-center lg:flex-row justify-around">
+                            <div class="flex flex-col justify-between items-center h-48 lg:h-56 lg:w-96">
+                                <input type="text" name="Nom" placeholder="Nom" required class="bg-slate-200 rounded-3xl h-12 w-4/5 lg:w-full lg:max-w-md max-w-sm px-4 py-2 font-varela font-semibold placeholder:text-slate-500" data-aos="zoom-in" data-aos-delay="350" data-aos-once="true">
+                                <input type="email" name="Email" placeholder="Email" required class="bg-slate-200 rounded-3xl h-12 w-4/5 lg:w-full lg:max-w-md max-w-sm px-4 py-2 font-varela font-semibold placeholder:text-slate-500" data-aos="zoom-in" data-aos-delay="400" data-aos-once="true">
+                                <input type="tel" name="Téléphone" placeholder="Téléphone (facultatif)" class="bg-slate-200 rounded-3xl h-12 w-4/5 lg:w-full lg:max-w-md max-w-sm px-4 py-2 font-varela font-semibold placeholder:text-slate-500" data-aos="zoom-in" data-aos-delay="450" data-aos-once="true">
+                            </div>
+                            <textarea maxlength="600" name="Sujet" placeholder="Message" required rows="5" cols="24" class="bg-slate-200 rounded-3xl w-4/5 max-w-sm lg:max-w-md h-40 lg:h-56 mx-auto lg:mx-0 my-6 px-4 py-2 font-varela font-semibold resize-none placeholder:text-slate-500" data-aos="zoom-in" data-aos-delay="500" data-aos-once="true"></textarea>
+                        </div>
+                        <input type="submit" class="bg-blue-contact text-white rounded-3xl w-1/2 max-w-15rem min-w-10rem py-2 font-varela mx-auto hover:cursor-pointer" data-aos="zoom-in" data-aos-delay="550" data-aos-once="true">
+                        <p id="contact-status" class="hidden fixed top-[50vh] left-[50vw] w-60 h-20 -mt-10 -ml-[7.5rem] rounded-3xl text-center font-varela leading-[5rem] shadow-md bg-white opacity-0 transition-opacity duration-1000"></p>
+                    </form>                    
                 </section>
             </div>
         </div>
         <footer class="relative">
-            <!-- <div class="flex h-auto w-full overflow-hidden justify-center bg-cover -z-10 relative">
-                <img src="Assets/Idée-parallaxe/city-cut-in-10/image1x1.jpg" alt="colonne1 city" data-aos="fade-down" data-aos-duration="700" data-aos-delay="100">
-                <img src="Assets/Idée-parallaxe/city-cut-in-10/image2x1.jpg" alt="colonne2 city"data-aos="fade-up" data-aos-duration="700"data-aos-delay="200">
-                <img src="Assets/Idée-parallaxe/city-cut-in-10/image3x1.jpg" alt="colonne3 city"data-aos="fade-down" data-aos-duration="700"data-aos-delay="300">
-                <img src="Assets/Idée-parallaxe/city-cut-in-10/image4x1.jpg" alt="colonne4 city"data-aos="fade-up" data-aos-duration="700"data-aos-delay="400">
-                <img src="Assets/Idée-parallaxe/city-cut-in-10/image5x1.jpg" alt="colonne5 city"data-aos="fade-down" data-aos-duration="700"data-aos-delay="500">
-                <img src="Assets/Idée-parallaxe/city-cut-in-10/image6x1.jpg" alt="colonne6 city"data-aos="fade-up" data-aos-duration="700"data-aos-delay="500">
-                <img src="Assets/Idée-parallaxe/city-cut-in-10/image7x1.jpg" alt="colonne7 city"data-aos="fade-down" data-aos-duration="700"data-aos-delay="400">
-                <img src="Assets/Idée-parallaxe/city-cut-in-10/image8x1.jpg" alt="colonne8 city"data-aos="fade-up" data-aos-duration="700"data-aos-delay="300">
-                <img src="Assets/Idée-parallaxe/city-cut-in-10/image9x1.jpg" alt="colonne9 city"data-aos="fade-down" data-aos-duration="700"data-aos-delay="200">
-                <img src="Assets/Idée-parallaxe/city-cut-in-10/image10x1.jpg" alt="colonne10 city"data-aos="fade-up" data-aos-duration="700"data-aos-delay="100">
-            </div> -->
-            
             <div class="bg-black w-full h-auto mt-16 px-4 text-white flex flex-col opacity-80">
                 <div class="w-full text-7xl font-bold">
                     <a class="flex items-center md:ml-16" href="#home"><img class="w-32 h-32 md:w-40 md:h-40" src="Assets/images/Logos-Site/logo_lgbt-no-bg.png" alt=""><h2 class="text-5xl md:text-6xl font-arvo">OUT N' PROUD</h2></a>
@@ -282,7 +370,6 @@
                 
             </div>
             <a id="to-top-button" class=" hidden fixed z-50 bottom-5 right-5" href="#home"><img class="w-16 h-16 rotate-180" src="Assets/idée maquette et back2top/fleche-vers-le-bas.png" alt=""></a>
-           
         </footer>
         <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
         <script>

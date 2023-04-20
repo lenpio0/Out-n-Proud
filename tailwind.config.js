@@ -30,6 +30,9 @@ module.exports = {
         'menu-open': 'url(../images/burger-menu.svg)',
         'menu-close': 'url(../images/close.svg)',
       },
+      backgroundSize: {
+        '80%': '80%',
+      },
       maxHeight: {
         '750px': '750px',
         '700px': '700px',
