@@ -13,9 +13,10 @@
         <script src="scripts/form.js" defer></script>
         <script src="scripts/lgbtq+.js" defer></script>
         <script src="scripts/hide.js" defer></script>
+        <script src="scripts/burger.js" defer></script>
     </head>
-<body class="max-w-full m-0 pt-[700px] selection:bg-fuchsia-300 selection:text-fuchsia-800">
-    <div class="fixed top-0 -z-20">
+<body class="max-w-full m-0 pt-[700px] selection:bg-fuchsia-300 selection:text-fuchsia-800 overflow-x-hidden">
+    <div class="fixed top-0 -z-20 w-full min-w-[900px]">
         <div class="relative" id="home">
             <div class="flex h-screen w-full overflow-hidden justify-center">
                 <img class="h-full w-full" 
@@ -40,13 +41,13 @@
                 <img class="h-full w-full" data-aos="fade-down"data-aos-duration="700"data-aos-delay="500"
                     src="./Assets/Idée-parallaxe/row-1-column-10.png" alt="colonne10 amsterdam">
             </div>
-            <h1  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-6xl md:text-8xl text-white font-arvo">OUT AND<br/><span id="test-typing"></span></h1>
+            <h1  class="absolute top-64 ml-[calc(50vw_-_135px)] md:ml-[calc(50vw_-_215px)] transform text-6xl md:text-8xl text-white font-arvo">OUT AND<br/><span id="test-typing"></span></h1>
         </div>
-        </div>
+    </div>
         <div id="section-container" class="px-4 2xl:px-60 xl:px-40 lg:px-20 md:px-10 relative">
             <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
-                <nav class="bg-white font-varela text-2xl font-semibold relative -mt-16 py-4 rounded-t-3xl lg:" data-aos="fade-up">
-                    <ul class="divide-x-4 divide-black border-b-4 mx-12 pb-6 pt-4 border-black flex justify-around">
+                <nav class="bg-white font-varela text-2xl font-semibold relative -mt-16 py-4 rounded-t-3xl" data-aos="fade-up">
+                    <ul id="menu" class="divide-x-4 divide-black border-b-4 mx-12 pb-6 pt-4 border-black flex flex-col lg:flex-row justify-around">
                         <li><a class="hover:text-purple-500 hover:text-3xl uppercase font-bold" href="#events"> Évènements</a></li>
                         <li><a class="hover:text-cyan-500 hover:text-3xl uppercase pl-8 font-bold" href="#our-values">Nos Valeurs</a></li>
                         <li><a class="hover:text-pink hover:text-3xl uppercase pl-8 font-bold" href="#help-us">Nous Aider</a></li>
@@ -54,6 +55,7 @@
                         <li><a class="hover:text-yellow hover:text-3xl uppercase pl-8 font-bold" href="#who"> À Propos</a></li>
                         <li><a class="hover:text-green hover:text-3xl uppercase pl-8 font-bold" href="#contact">Contact</a></li>
                     </ul>
+                    <a id="open" class="block">ouvrir</a>
                 </nav>
                 <section class="bg-white relative w-full overflow-scroll" id="landingg">
                     <div class="flex sm:justify-center m-auto" id="rainbow-cards">
@@ -229,10 +231,9 @@
             
             <div class="bg-black w-full h-auto mt-16 px-4 text-white flex flex-col opacity-80">
                 <div class="w-full text-7xl font-bold">
-                    <a class="flex items-center ml-20" href="#home"><img class="w-40 h-40" src="Assets/images/Logos-Site/logo_lgbt-no-bg.png" alt=""><h2 class="w-full md:w-2/3 font-arvo">Out and Proud</h2></a>
+                    <a class="flex items-center ml-20" href="#home"><img class="w-40 h-40" src="Assets/images/Logos-Site/logo_lgbt-no-bg.png" alt=""><h2 class="w-full md:w-2/3 font-arvo">OUT N' PROUD</h2></a>
                 </div>
                 <div class="flex mt-8 flex-col md:flex-row md:justify-between">
-                    <p class="w-full md:w-2/3 md text-white font-raleway px-20 py-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam non nisi non auctor. Nunc vestibulum mi eget nibh ultrices.</p>
                     <div class="flex flex-row space-x-8 items-center justify-between px-10">
                         <a href="https://www.facebook.com/" target="_blank">
                             <svg width="12" height="24" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
