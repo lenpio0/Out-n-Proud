@@ -982,6 +982,18 @@ video {
   height: 100vh;
 }
 
+.h-0 {
+  height: 0px;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-64 {
+  height: 16rem;
+}
+
 .max-h-28 {
   max-height: 7rem;
 }
@@ -3020,12 +3032,22 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-1000 {
   transition-duration: 1000ms;
 }
 
 .duration-200 {
   transition-duration: 200ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .duration-700 {
