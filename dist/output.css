@@ -3517,6 +3517,22 @@ video {
     height: 14rem;
   }
 
+  .lg\:h-7 {
+    height: 1.75rem;
+  }
+
+  .lg\:h-10 {
+    height: 2.5rem;
+  }
+
+  .lg\:h-1 {
+    height: 0.25rem;
+  }
+
+  .lg\:h-11 {
+    height: 2.75rem;
+  }
+
   .lg\:max-h-\[700px\] {
     max-height: 700px;
   }
