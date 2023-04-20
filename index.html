@@ -47,18 +47,18 @@
         <div id="section-container" class="px-4 2xl:px-60 xl:px-40 lg:px-20 md:px-10 relative">
             <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                 <nav class="bg-white font-varela text-2xl font-semibold relative -mt-16 py-4 rounded-t-3xl" data-aos="fade-up">
-                    <ul id="menu" class="divide-x-4 divide-black border-b-4 mx-12 pb-6 pt-4 border-black flex flex-col lg:flex-row justify-around">
-                        <li><a class="hover:text-purple-500 hover:text-3xl uppercase font-bold" href="#events"> Évènements</a></li>
+                    <a id="open" class="block bg-menu-open w-10 h-10 bg-contain m-auto lg:hidden"></a>
+                    <ul id="menu" class="lg:divide-x-4 lg:divide-black border-t-2 lg:border-t-0 border-b-2 mx-12 pb-6 pt-4 border-black lg:flex flex-col lg:flex-row justify-around hidden">
+                        <li><a class="hover:text-purple-500 hover:text-3xl uppercase pl-8 font-bold" href="#events"> Évènements</a></li>
                         <li><a class="hover:text-cyan-500 hover:text-3xl uppercase pl-8 font-bold" href="#our-values">Nos Valeurs</a></li>
                         <li><a class="hover:text-pink hover:text-3xl uppercase pl-8 font-bold" href="#help-us">Nous Aider</a></li>
                         <li><a class="hover:text-orange hover:text-3xl uppercase pl-8 font-bold" href="#resources">Nos Ressources</a></li>
                         <li><a class="hover:text-yellow hover:text-3xl uppercase pl-8 font-bold" href="#who"> À Propos</a></li>
                         <li><a class="hover:text-green hover:text-3xl uppercase pl-8 font-bold" href="#contact">Contact</a></li>
                     </ul>
-                    <a id="open" class="block">ouvrir</a>
                 </nav>
                 <section class="bg-white relative w-full overflow-scroll" id="landingg">
-                    <div class="flex sm:justify-center m-auto" id="rainbow-cards">
+                    <div class="flex sm:justify-center mx-auto my-16" id="rainbow-cards">
                         <div class="bg-blue rounded-full h-80 w-16 p-4 mx-1 group transition-[height] transition-[width] duration-700 overflow-hidden shrink-0">
                             <div class="bg-white rounded-full text-center p-1 h-10 group-hover:h-72 transition-all overflow-hidden">
                                 <span class="font-arvo font-semibold text-xl">L</span>
@@ -128,7 +128,7 @@
                 <section class=" bg-[#ffffff] relative w-full h-screen" id="eventss">
                     <div class="h-screen flex justify-center place-items-center flex-col">
                         <div class="mb-72"><h2 class="text-3xl font-raleway border-4 border-black rounded-xl p-2 font-bold italic">Evènements dans votre ville de Besançon</h2></div>
-                        <div class="slider relative w-[200px] h-[200px] ">
+                        <div class="slider relative md:w-[200px] md:h-[200px] ">
                             <span class=" yo1 absolute flex justify-center top-0 left-0 w-full h-full origin-center hover:" style="--i:1;"><a href="http://" target="_blank"><img class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl duration-1000 -z-10" src="images/concert.jpg" alt="image"><h3 class="zeubi1 absolute bottom-0 text-center w-full -translate-x-1/2 text-white text-3xl bg-[#1b19197c] rounded-2xl z-10 ">Concerts</h3></span></a>
                             <span class="yo2 absolute flex justify-center top-0 left-0 w-full h-full origin-center" style="--i:2;"><a href="http://" target="_blank"><img class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl duration-1000 -z-10" src="images/Expositions.jpg" alt="image"><h3 class="zeubi2 absolute bottom-0 text-center w-full -translate-x-1/2 text-white text-3xl bg-[#1b19197c] rounded-2xl z-10 ">Expositions</h3></span></a>
                             <span class="yo3 absolute flex justify-center top-0 left-0 w-full h-full origin-center" style="--i:3;"><a href="http://" target="_blank"><img class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl duration-1000 -z-10" src="images/spectacle.jpg" alt="image"><h3 class="zeubi3 absolute bottom-0 text-center w-full -translate-x-1/2 text-white text-3xl bg-[#1b19197c] rounded-2xl z-10 ">Spectacles</h3></span></a>
@@ -231,10 +231,10 @@
             
             <div class="bg-black w-full h-auto mt-16 px-4 text-white flex flex-col opacity-80">
                 <div class="w-full text-7xl font-bold">
-                    <a class="flex items-center ml-20" href="#home"><img class="w-40 h-40" src="Assets/images/Logos-Site/logo_lgbt-no-bg.png" alt=""><h2 class="w-full md:w-2/3 font-arvo">OUT N' PROUD</h2></a>
+                    <a class="flex items-center md:ml-16" href="#home"><img class="w-32 h-32 md:w-40 md:h-40" src="Assets/images/Logos-Site/logo_lgbt-no-bg.png" alt=""><h2 class="text-5xl md:text-6xl font-arvo">OUT N' PROUD</h2></a>
                 </div>
-                <div class="flex mt-8 flex-col md:flex-row md:justify-between">
-                    <div class="flex flex-row space-x-8 items-center justify-between px-10">
+                <div class="flex mt-8 flex-col md:flex-row md:justify-end">
+                    <div class="flex flex-row space-x-8 items-center justify-center md:justify-between px-10 md:mr-24">
                         <a href="https://www.facebook.com/" target="_blank">
                             <svg width="12" height="24" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M3.89782 12V6.53514H5.67481L5.93895 4.39547H3.89782V3.03259C3.89782 2.41516 4.06363 1.99243 4.91774 1.99243H6V0.0847928C5.47342 0.0262443 4.94412 -0.00202566 4.41453 0.000112795C2.84383 0.000112795 1.76542 0.994936 1.76542 2.82122V4.39147H0V6.53114H1.76928V12H3.89782Z" fill="white"/>
@@ -255,13 +255,12 @@
                     </div>
                 </div>
                 <div class="flex flex-col relative">
-                    <div class=" mt-20 mb-12 justify-around font-varela text-2xl flex flex-col md:flex-row">
-                        <a href="#events" class="hidden md:block cursor-pointer text-white hover:text-purple-500 uppercase">Évènements</a>
-                        <a href="#our-values" class="hidden md:block cursor-pointer text-white hover:text-cyan-500 uppercase">Nos Valeurs</a>
-                        <a href="#help-us" class="hidden md:block cursor-pointer text-white hover:text-pink uppercase">Nous Aider</a>
-                        <a href="#resources" class="hidden md:block cursor-pointer text-white hover:text-orange uppercase">Nos Ressources</a>
-                        <a class="hidden md:block cursor-pointer text-white hover:text-yellow uppercase" href="#who"> À Propos</a>
-                        <a href="#contact" class="hidden md:block cursor-pointer text-white hover:text-green uppercase">Contact</a>                        
+                    <div class=" mt-10 md:mt-20 mb-12 justify-around font-varela text-2xl flex flex-col md:flex-row">
+                        <a href="#events" class="hidden md:block cursor-pointer text-white hover:text-purple-500 uppercase text-xl">Évènements</a>
+                        <a href="#our-values" class="hidden md:block cursor-pointer text-white hover:text-cyan-500 uppercase text-xl">Nos Valeurs</a>
+                        <a href="#help-us" class="hidden md:block cursor-pointer text-white hover:text-pink uppercase text-xl">Nous Aider</a>
+                        <a class="hidden md:block cursor-pointer text-white hover:text-yellow uppercase text-xl" href="#who"> À Propos</a>
+                        <a href="#contact" class="hidden md:block cursor-pointer text-white hover:text-green uppercase text-xl">Contact</a>                        
                     </div>
                     <hr class="border-white"/>
                     <p class="w-full text-center my-8 font-raleway text-white">Copyright © 2023 DivClass</p>                    
